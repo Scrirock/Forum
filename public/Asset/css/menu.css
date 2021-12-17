@@ -1,0 +1,90 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 9rem;
+    overflow: hidden;
+    background-color: #373737;
+}
+
+#rightMenu, #leftMenu, #logoMenu {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.underline{
+    width: 0;
+    position: absolute;
+    border-bottom: 1px solid #d3d3d3;
+    transition-property: width;
+    transition-duration: .4s;
+    top: 6rem;
+    border-radius: 3rem;
+}
+
+div.menu:hover .underline{
+    width: 3rem;
+}
+
+div.menu:hover{
+    font-size: 2.4rem;
+    color: #d3d3d3;
+}
+
+div.menu{
+    width: 16rem;
+    transition-duration: .4s;
+    transition-property: font-size;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    color: #aaaaaa;
+    text-decoration: none;
+    margin: 0 5rem;
+}
+
+a.menu:hover{
+    font-size: 2.6rem;
+}
+
+#logoMenu{
+    width: 10%;
+    border: 1px solid #aaaaaa;
+    position: relative;
+    left: -2rem;
+    color: #aaaaaa;
+}
+
+#leftMenu{
+    width: 55%;
+}
+
+#rightMenu{
+    width: 25%;
+}
+
+#barre{
+    border-left: 1px solid #aaaaaa;
+    padding-left: 5rem;
+}
+
+.button{
+    background-color: #aaaaaa;
+    color: #373737;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    transition-duration: .4s;
+    margin-right: 1rem;
+}
+
+.button:hover{
+    background-color: #d3d3d3;
+    border-radius: 1.5rem;
+}
+
+#menuBar{
+    display: none;
+}

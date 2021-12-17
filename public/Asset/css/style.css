@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #737373;
+    width: 100%;
+    font-size: 2.2rem;
+    position: relative;
+    min-height: 100vh;
+}
+
+.littleTitle{
+    color: black;
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin: 2rem;
+    width: 40%;
+    border-bottom: 1px solid black;
+    white-space: nowrap;
+    text-decoration: underline;
+}
+
+.fitContent{
+    width: fit-content;
+}
+
+.rules{
+    font-size: 1.8rem;
+    margin: 1rem 5rem;
+}
+
+h1{
+    text-align: center;
+    margin: 5rem;
+    color: black;
+}
+
+#containerRulesPage{
+    color: #202020;
+    width: 75%;
+    margin: auto;
+}
+
+#containerRulesPage ul{
+    font-size: 1.8rem;
+    margin: 3rem 10rem;
+}
+
+::-webkit-scrollbar{
+    width: 13px;
+    height: 13px;
+}
+::-webkit-scrollbar-thumb{
+    background: #737373;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #B3AFB3;
+}
+::-webkit-scrollbar-track{
+    background: #F0F0F0;
+}
+
+.topic, #addCategory{
+    margin: 2rem;
+}
+
+#scene{
+    width: 60%;
+    left: 15rem;
+}
+
+.category{
+    background: rgb(55,55,55);
+    background: linear-gradient(90deg, rgba(55,55,55,1) 0%, rgba(115,115,115,1) 100%);
+    color: #aaaaaa;
+    padding: 3rem;
+    margin: 5rem 0;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.category:hover{
+    background: rgb(55,55,55);
+}
+
+.category:hover .archived{
+    color: #d3d3d3;
+}
+
+.show{
+    margin: 3rem 0;
+}
+
+.topic{
+    margin-left: 4rem;
+}
+
+.topicLink{
+    text-decoration: none;
+    transition-duration: .4s;
+    color: #aaaaaa;
+}
+
+.topicLink:hover{
+    color: #d3d3d3;
+    font-size: 2.3rem;
+}
+
+.title{
+    font-size: 2.6rem;
+    text-decoration: underline;
+}
+
+.description{
+    margin: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.oneLine, .oneLine div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#topicContainer, #comment{
+    border: 1px solid black;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+#pseudo{
+    font-size: 1.8rem;
+    margin: 0 2rem 2rem 2rem;
+    font-style: italic;
+}
+
+.pseudo{
+    font-style: italic;
+    margin-right: 2rem;
+}
+
+.date{
+    color: #737373;
+    font-size: 1.5rem;
+}
+
+#comment, #commentaire{
+    margin-left: 10rem;
+}
+
+#commentaire{
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.oneComment{
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border: 1px solid black;
+}
+
+#plusIcon{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+#addTopic{
+    color: #202020;
+    width: 33%;
+    padding: 5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+#addTopic p{
+    margin-bottom: 5rem;
+}
+
+textarea{
+    resize: none;
+}
+
+#title{
+    margin-bottom: 2rem;
+}
+
+#containerTopicForm{
+    margin: 10rem auto;
+    border: 1px solid black;
+    width: 55rem;
+    height: 50rem;
+    padding: 3rem;
+}
+
+#submitTopic{
+    display: block;
+    width: 10rem;
+    height: 5rem;
+    margin: 2rem auto;
+}
+
+#containerTopicForm label[for="category"]{
+    margin-left: 2rem;
+}
+
+.connexionForm{
+    border: 1px solid black;
+    width: 42rem;
+    margin: 5rem auto;
+    padding: 5rem;
+}
+
+.connexionForm div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.icon i{
+    margin: 0 2rem;
+}
+
+.delete{
+    color: red;
+}
+
+.edit:hover, .show:hover, .delete:hover{
+    cursor: pointer;
+}
+
+.description form, .oneComment form{
+    display: none;
+}
+
+.descriptionInput{
+    width: 100rem;
+    height: 6rem;
+    margin-left: 2rem;
+    font-size: 2.2rem;
+}
+
+.contentText{
+    font-size: 2.2rem;
+}
+
+.description form input[type="submit"]{
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 2.2rem;
+}
+
+.edit:hover, .archived:hover{
+    color: #d3d3d3;
+}
+
+.archived{
+    color: #1f1f1f;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.pButton{
+    padding: 1rem;
+    margin: 2rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    transition-duration: .4s;
+    width: 21rem;
+}
+
+.pButton:hover{
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+#footer{
+    background-color: #373737;
+    color: #d3d3d3;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    font-size: 1.8rem;
+    position: absolute;
+    width: 100%;
+    bottom: -8rem;
+}
+
+#containerAdminPage{
+    display: flex;
+    justify-content: space-between;
+}
+
+#log{
+    border: 1px solid black;
+    width: 50rem;
+    height: 80vh;
+    overflow: scroll;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.logLine{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}

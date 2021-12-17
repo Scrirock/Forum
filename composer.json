@@ -1,0 +1,21 @@
+{
+    "name": "scrirock/forum",
+    "description": "forum",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Scrirock\\Forum\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Scrirock",
+            "email": "Scrirock@gmail.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^2.3",
+        "league/omnipay": "3",
+        "omnipay/paypal": "^3.0"
+    }
+}

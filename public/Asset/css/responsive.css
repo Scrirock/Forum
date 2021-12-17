@@ -1,0 +1,50 @@
+@media screen and (max-width: 1470px) {
+    nav{
+        width: 4rem;
+        height: 4rem;
+        overflow: hidden;
+        position: absolute;
+        display: initial;
+        padding: .4rem;
+        /*top: -10rem;*/
+    }
+
+    nav:hover{
+        width: 32rem;
+        height: 90vh;
+    }
+
+    #menuBar, #barre{
+        display: initial;
+        padding: 0;
+        border: 0;
+    }
+
+    #logoMenu{
+        display: none;
+    }
+
+    #rightMenu, #leftMenu{
+        flex-flow: column nowrap;
+        width: 100%;
+    }
+
+    #rightMenu{
+        height: 15rem;
+    }
+
+    #leftMenu{
+        height: 25rem;
+    }
+
+    div.underline{
+        width: fit-content;
+        position: relative;
+        border: none;
+    }
+
+    div.menu:hover .underline{
+        width: fit-content;
+    }
+
+}
